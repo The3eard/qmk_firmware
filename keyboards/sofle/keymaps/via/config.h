@@ -17,7 +17,7 @@
 
 #pragma once
 
-/* By default left side is selected as master, 
+/* By default left side is selected as master,
 see https://docs.qmk.fm/#/feature_split_keyboard?id=setting-handedness
 for more options. */
 
@@ -47,4 +47,8 @@ for more options. */
 #        define RGBLIGHT_SAT_STEP 17
 #        define RGBLIGHT_VAL_STEP 17
 #    endif
+#    define ENCODER_DIRECTION_FLIP
+#    define SPLIT_USB_DETECT
+#    define SPLIT_WATCHDOG_ENABLE
+#    define SPLIT_WATCHDOG_TIMEOUT 3000
 #endif
